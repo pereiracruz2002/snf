@@ -187,6 +187,9 @@
                         <a href="<?php echo base_url() ?>usuario"><i class="fa fa-fw fa-bar-chart-o"></i> Gerenciar Administradores</a>
                     </li>
                    <?php endif;?>
+                   <li>
+                      <a href="<?php echo base_url() ?>nota"><i class="fa fa-fw fa-bar-chart-o"></i> Upload de Notas</a>
+                    </li>
                     <li class="active">
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>

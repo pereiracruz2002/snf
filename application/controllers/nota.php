@@ -4,7 +4,7 @@ include_once('BaseCrud.php');
 class Nota extends BaseCrud
 {
   var $modelname = 'nota'; //Nome da model sem o "_model"
-  var $titulo = 'Upload';
+  var $titulo = 'Listagem';
   var $campos_busca = 'xNomeCliente,nNF'; //Campos para filtragem
   var $base_url = 'nota';
   var $actions = 'CRUD';
@@ -14,6 +14,10 @@ class Nota extends BaseCrud
   var $title = 'Upload nfe';
   var $tituloMenu = 'Upload nfe';
   var $upload = "";
+  //var $acoes_controller = array(array('url' => 'mensagens_admin/imprimir', 'title' => 'Imprimir', 'class' => 'imprimir'),
+                               //array('url' => 'mensagens_admin/xls', 'title' => 'Gerar XLS', 'class' => 'csv'),
+                               //);
+   var $acoes_extras = array(array('url'=>'mensagens_admin/desabilitar','title'=>'Visualizar','class'=>'modal'),array('url'=>'mensagens_admin/habilitar','title'=>'Habilitar','class'=>'btn small green'));
 
   function __contruct(){
     parent::__construct();

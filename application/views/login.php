@@ -10,17 +10,18 @@
     <div class="row">
 		<div class="col-md-4 col-md-offset-4">
     		<div class="panel panel-default">
+    			 <?php if(isset($erro)) print box_alert($erro); ?>
 			  	<div class="panel-heading">
-			    	<h3 class="panel-title">Please sign in</h3>
+			    	<h3 class="panel-title">Identifique-se</h3>
 			 	</div>
 			  	<div class="panel-body">
-			    	<form accept-charset="UTF-8" role="form">
+			    	<form class="form-signin" role="form" method="post">
                     <fieldset>
 			    	  	<div class="form-group">
-			    		    <input class="form-control" placeholder="E-mail" name="email" type="text">
+			    		    <input class="form-control" placeholder="Login" name="login" type="text">
 			    		</div>
 			    		<div class="form-group">
-			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
+			    			<input class="form-control" placeholder="CNPJ" name="senha" type="password" value="">
 			    		</div>
 			    		<div class="checkbox">
 			    	    	<label>
