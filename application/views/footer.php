@@ -64,11 +64,11 @@
          * usando jSon.  
          */
         function carregaDadosClienteJSon(id_cliente){
-            $.post(base_url+'/index.php/clientes/dados_cliente', {
-                id_cliente: id_cliente
+            $.post(base_url+'/nota/dados_nota', {
+                id_nota: id_cliente
             }, function (data){
-                $('#nome').val(data.nome);
-                $('#email').val(data.email);
+                $('#nome').val(data.cUF);
+                $('#email').val(data.cNF);
                 $('#id_cliente').val(data.id_cliente);//aqui eu seto a o input hidden com o id do cliente, para que a edição funcione. Em cada tela aberta, eu seto o id do cliente. 
             }, 'json');
         }

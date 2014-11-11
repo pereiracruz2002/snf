@@ -69,7 +69,8 @@
                                 <?php endif ?>
                                     
                                 <?php foreach ($acoes_extras as $acao_extra): ?>
-                                    <a href="<?= site_url($acao_extra['url'] . "/" . $row->{$model->id_col}); ?>" title="<?= $acao_extra['title']; ?>" class="btn btn-xs <?= $acao_extra['class']; ?>"><?= $acao_extra['title']; ?></a>
+                                    <a  href="<?= site_url($acao_extra['url'] . "/" . $row->{$model->id_col}); ?>" title="<?= $acao_extra['title']; ?>" class="btn btn-xs <?= $acao_extra['class']; ?>"><?= $acao_extra['title']; ?></a>
+                                    <a onclick="janelaEditarCliente(<?= $row->{$model->id_col}; ?>)"  href="javascript:" class="btn btn-xs <?= $acao_extra['class']; ?>"><?= $acao_extra['title']; ?></a>
                                 <?php endforeach; ?>
                             </td>
                         </tr>

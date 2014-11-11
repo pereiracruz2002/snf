@@ -85,6 +85,24 @@ class Nota extends BaseCrud
     $this->gravaDadosNota($data['file'],$id);
   }
 
+  public function dados_nota(){
+    $this->load->model("nota_model", "nota");
+    $nota_id= $this->input->post("id_nota");
+    $consulta = $this->nota->getNota($nota_id);
+    $array_nota = array(
+    
+      "id_nota" => $consulta->row()->id_nota,
+      "cUF" => $consulta->row()->cUF,
+      "cNF" => $consulta->row()->cNF
+      
+    );
+    
+    /*
+     * Após os índices criados para o formato jSon, dou um echo no jsonEcode da array acima.
+     */
+    echo json_encode($array_nota);
+  }
+
   public function setPermission(){
     if(chmod(UPLOAD.'35140602009721000198550010000523051136272364-nfe.xml',0777)){
       echo "setou permissão";

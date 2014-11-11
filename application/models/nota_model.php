@@ -327,4 +327,14 @@ class nota_model extends MY_Model
         'append' => '</div>',
         'values' => array(), ),
 	 );
+
+
+    public function getNota($id_nota) {
+            
+        if ($id_nota != null) 
+            $this->db->where("id_nota", $id_nota);
+        
+        return $this->db->get("nota");
+        
+    }
 }
