@@ -9,11 +9,11 @@ class Usuario extends BaseCrud {
     var $titulo = 'Usuários Administrativos';
     var $campos_busca = 'nome,login,ativo'; //Campos para filtragem
     var $base_url = 'usuario';
-    var $actions = '';
+    var $actions = 'CRUD';
     var $delete_fields = '';
     var $tabela = 'nome,login,ativo'; //Campos que aparecerão na tabela de listagem
     var $base_ativo = '';
-    var $title = 'Admin Veridiana - Usuários Administrativos';
+    var $title = 'Admin  - Usuários Administrativos';
     var $tituloMenu = 'Administradores';
 
     function __contruct() {

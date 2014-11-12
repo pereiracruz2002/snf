@@ -18,14 +18,153 @@
             
             <form role="form" method="post" action="<?= base_url('index.php/clientes/salvar')?>" id="formulario_clientes">
               <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" name="nome">
+                <label for="nome">cUF</label>
+                <input type="text" class="form-control" id="cUF" name="cUF">
               </div>
               <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <label for="email">cNF</label>
+                <input type="email" class="form-control" id="cNF" name="cNF">
               </div>
-              <input type="hidden" name="id_cliente" id="id_cliente" value="" />
+              <div class="form-group">
+                <label for="nome">natOp</label>
+                <input type="text" class="form-control" id="natOp" name="natOp">
+              </div>
+               <div class="form-group">
+                <label for="nome">natOp</label>
+                <input type="text" class="form-control" id="natOp" name="natOp">
+              </div>
+              <div class="form-group">
+                <label for="nome">indPag</label>
+                <input type="text" class="form-control" id="indPag" name="indPag">
+              </div>
+              <div class="form-group">
+                <label for="nome">modInfo</label>
+                <input type="text" class="form-control" id="modInfo" name="modInfo">
+              </div>
+              <div class="form-group">
+                <label for="nome">serie</label>
+                <input type="text" class="form-control" id="serie" name="serie">
+              </div>
+              <div class="form-group">
+                <label for="nome">nNF</label>
+                <input type="text" class="form-control" id="nNF" name="nNF">
+              </div>
+              <div class="form-group">
+                <label for="nome">dEmi</label>
+                <input type="text" class="form-control" id="dEmi" name="dEmi">
+              </div>
+              <div class="form-group">
+                <label for="nome">tpNF</label>
+                <input type="text" class="form-control" id="tpNF" name="tpNF">
+              </div>
+              <div class="form-group">
+                <label for="nome">cMunFG</label>
+                <input type="text" class="form-control" id="cMunFG" name="cMunFG">
+              </div>
+              <div class="form-group">
+                <label for="nome">tpImp</label>
+                <input type="text" class="form-control" id="tpImp" name="tpImp">
+              </div>
+              <div class="form-group">
+                <label for="nome">tpEmis</label>
+                <input type="text" class="form-control" id="tpEmis" name="tpEmis">
+              </div>
+              <div class="form-group">
+                <label for="nome">cDV</label>
+                <input type="text" class="form-control" id="cDV" name="cDV">
+              </div>
+              <div class="form-group">
+                <label for="nome">tpAmb</label>
+                <input type="text" class="form-control" id="tpAmb" name="tpAmb">
+              </div>
+              <div class="form-group">
+                <label for="nome">finNFe</label>
+                <input type="text" class="form-control" id="finNFe" name="finNFe">
+              </div>
+              <div class="form-group">
+                <label for="nome">procEmi</label>
+                <input type="text" class="form-control" id="procEmi" name="procEmi">
+              </div>
+              <div class="form-group">
+                <label for="nome">verProc</label>
+                <input type="text" class="form-control" id="verProc" name="verProc">
+              </div>
+              <div class="form-group">
+                <label for="nome">CNPJ</label>
+                <input type="text" class="form-control" id="CNPJ" name="CNPJ">
+              </div>
+              <div class="form-group">
+                <label for="nome">xNomeCliente</label>
+                <input type="text" class="form-control" id="xNomeCliente" name="xNomeCliente">
+              </div>
+              <div class="form-group">
+                <label for="nome">enderEmit</label>
+                <input type="text" class="form-control" id="enderEmit" name="enderEmit">
+              </div>
+              <div class="form-group">
+                <label for="nome">IE</label>
+                <input type="text" class="form-control" id="IE" name="IE">
+              </div>
+              <div class="form-group">
+                <label for="nome">IM</label>
+                <input type="text" class="form-control" id="IM" name="IM">
+              </div>
+              <div class="form-group">
+                <label for="nome">CNAE</label>
+                <input type="text" class="form-control" id="CNAE" name="CNAE">
+              </div>
+              <div class="form-group">
+                <label for="nome">CRT</label>
+                <input type="text" class="form-control" id="CRT" name="CRT">
+              </div>
+               <div class="form-group">
+                <label for="nome">CPF</label>
+                <input type="text" class="form-control" id="CPF" name="CPF">
+              </div>
+               <div class="form-group">
+                <label for="nome">xNome</label>
+                <input type="text" class="form-control" id="xNome" name="xNome">
+              </div>
+               <div class="form-group">
+                <label for="nome">enderDest</label>
+                <input type="text" class="form-control" id="enderDest" name="enderDest">
+              </div>
+               <div class="form-group">
+                <label for="nome">IE2</label>
+                <input type="text" class="form-control" id="IE2" name="IE2">
+              </div>
+              <div class="form-group">
+                <label for="nome">email</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="nome">prod</label>
+                <input type="text" class="form-control" id="prod" name="prod">
+              </div>
+              <div class="form-group">
+                <label for="nome">imposto</label>
+                <input type="text" class="form-control" id="imposto" name="imposto">
+              </div>
+              <div class="form-group">
+                <label for="nome">ICMSTot</label>
+                <input type="text" class="form-control" id="ICMSTot" name="ICMSTot">
+              </div>
+              <div class="form-group">
+                <label for="nome">modFrete</label>
+                <input type="text" class="form-control" id="modFrete" name="modFrete">
+              </div>
+              <div class="form-group">
+                <label for="nome">transporta</label>
+                <input type="text" class="form-control" id="transporta" name="transporta">
+              </div>
+              <div class="form-group">
+                <label for="nome">vol</label>
+                <input type="text" class="form-control" id="vol" name="vol">
+              </div>
+              <div class="form-group">
+                <label for="nome">infCpl</label>
+                <input type="text" class="form-control" id="infCpl" name="infCpl">
+              </div>
             </form>     
                 
           </div>
@@ -67,9 +206,38 @@
             $.post(base_url+'/nota/dados_nota', {
                 id_nota: id_cliente
             }, function (data){
-                $('#nome').val(data.cUF);
-                $('#email').val(data.cNF);
-                $('#id_cliente').val(data.id_cliente);//aqui eu seto a o input hidden com o id do cliente, para que a edição funcione. Em cada tela aberta, eu seto o id do cliente. 
+                $('#cUF').val(data.cUF);
+                $('#cNF').val(data.cNF);
+                $('#natOp').val(data.natOp);
+                $('#indPag').val(data.indPag);
+                $('#modInfo').val(data.modInfo);
+                $('#serie').val(data.serie);
+                $('#nNF').val(data.nNF);
+                $('#dEmi').val(data.dEmi);
+                $('#cMunFG').val(data.cMunFG);
+                $('#cDV').val(data.cDV);
+                $('#tpAmb').val(data.tpAmb);
+                $('#finNFe').val(data.finNFe);
+                $('#procEmi').val(data.procEmi);
+                $('#verProc').val(data.verProc);
+                $('#CNPJ').val(data.CNPJ);
+                $('#xNomeCliente').val(data.xNomeCliente);
+                $('#enderEmit').val(data.enderEmit);
+                $('#xNome').val(data.xNome);
+                $('#IM').val(data.IM);
+                $('#CNAE').val(data.CNAE);
+                $('#CRT').val(data.CRT);
+                $('#CPF').val(data.CPF);
+                $('#enderDest').val(data.enderDest);
+                $('#IE2').val(data.IE2);
+                $('#email').val(data.email);
+                $('#prod').val(data.prod);
+                $('#imposto').val(data.imposto);
+                $('#ICMSTot').val(data.ICMSTot);//aqui eu seto a o input hidden com o id do cliente, para que a edição funcione. Em cada tela aberta, eu seto o id do cliente. 
+                $('#modFrete').val(data.modFrete);
+                $('#transporta').val(data.transporta);
+                $('#vol').val(data.vol);
+                $('#infCpl').val(data.infCpl);
             }, 'json');
         }
     

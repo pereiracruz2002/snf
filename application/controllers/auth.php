@@ -73,6 +73,7 @@ class Auth extends CI_Controller
             $empresas['logado'] = 'logado';
             $empresas['admin'] = 'admin';
             $empresas['tipo']= "empresa";
+            $empresas['nome'] = $mpresas['empNome'];
             $this->session->set_userdata('empresa',$empresas);
             redirect('painel');
         }else{
@@ -83,7 +84,7 @@ class Auth extends CI_Controller
 
     }
 
-     public function sair() {
+     public function logout() {
         $this->session->sess_destroy();
         redirect('auth/login');
     }

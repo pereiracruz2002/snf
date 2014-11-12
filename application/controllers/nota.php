@@ -5,9 +5,9 @@ class Nota extends BaseCrud
 {
   var $modelname = 'nota'; //Nome da model sem o "_model"
   var $titulo = 'Listagem';
-  var $campos_busca = 'xNomeCliente,nNF'; //Campos para filtragem
+  var $campos_busca = 'xNomeCliente,nNF,CPF,CNPJ'; //Campos para filtragem
   var $base_url = 'nota';
-  var $actions = 'CRUD';
+  var $actions = 'CR';
   var $delete_fields = '';
   var $tabela = 'file,data'; //Campos que aparecerão na tabela de listagem
   var $base_ativo = '';
@@ -17,7 +17,7 @@ class Nota extends BaseCrud
   //var $acoes_controller = array(array('url' => 'mensagens_admin/imprimir', 'title' => 'Imprimir', 'class' => 'imprimir'),
                                //array('url' => 'mensagens_admin/xls', 'title' => 'Gerar XLS', 'class' => 'csv'),
                                //);
-   var $acoes_extras = array(array('url'=>'mensagens_admin/desabilitar','title'=>'Visualizar','class'=>'modal'),array('url'=>'mensagens_admin/habilitar','title'=>'Habilitar','class'=>'btn small green'));
+   var $acoes_extras = array(array('url'=>'mensagens_admin/desabilitar','title'=>'Visualizar','class'=>'modal'));
 
   function __contruct(){
     parent::__construct();
@@ -89,11 +89,44 @@ class Nota extends BaseCrud
     $this->load->model("nota_model", "nota");
     $nota_id= $this->input->post("id_nota");
     $consulta = $this->nota->getNota($nota_id);
-    $array_nota = array(
-    
-      "id_nota" => $consulta->row()->id_nota,
-      "cUF" => $consulta->row()->cUF,
-      "cNF" => $consulta->row()->cNF
+    $array_nota = array( 
+    "id_nota" => $consulta->row()->id_nota,
+    "cUF" => $consulta->row()->cUF,
+    "cNF" => $consulta->row()->cNF,
+    "natOp"=>$consulta->row()->natOp,
+    "indPag"=>$consulta->row()->indPag,
+    "modInfo"=>$consulta->row()->modInfo,
+    "serie"=>$consulta->row()->serie,
+    "nNF"=>$consulta->row()->nNF,
+    "dEmi"=>$consulta->row()->dEmi,
+    "tpNF"=>$consulta->row()->tpNF,
+    "cMunFG"=>$consulta->row()->tpImp,
+    "tpImp"=>$consulta->row()->tpImp,
+    "tpEmis"=>$consulta->row()->tpEmis,
+    "cDV"=>$consulta->row()->cDV,
+    "tpAmb"=>$consulta->row()->tpAmb,
+    "finNFe"=>$consulta->row()->finNFe,
+    "procEmi"=>$consulta->row()->procEmi,
+    "verProc"=>$consulta->row()->verProc,
+    "CNPJ"=>$consulta->row()->CNPJ,
+    "xNomeCliente"=>$consulta->row()->xNomeCliente,
+    "enderEmit"=>$consulta->row()->enderEmit,
+    "IE"=>$consulta->row()->IE,
+    "IM"=>$consulta->row()->IM,
+    "CNAE"=>$consulta->row()->CNAE,
+    "CRT"=>$consulta->row()->CRT,
+    "CPF"=>$consulta->row()->CPF,
+    "xNome"=>$consulta->row()->xNome,
+    "enderDest"=>$consulta->row()->enderDest,
+    "IE2"=>$consulta->row()->IE2,
+    "email"=>$consulta->row()->email,
+    "prod"=>$consulta->row()->prod,
+    "imposto"=>$consulta->row()->imposto,
+    "ICMSTot"=>$consulta->row()->ICMSTot,
+    "modFrete"=>$consulta->row()->modFrete,
+    "transporta"=>$consulta->row()->transporta,
+    "vol"=>$consulta->row()->vol,
+    "infCpl"=>$consulta->row()->infCpl,
       
     );
     

@@ -77,7 +77,7 @@ class nota_model extends MY_Model
         ),
       'nNF' => array( 
         'type' => 'text',
-        'label' => 'nNF',
+        'label' => 'Número da Nota',
         'class' => '',
         'label_class' => 'col-md-2', 
         'prepend' => '<div class="col-md-2">',
@@ -172,7 +172,7 @@ class nota_model extends MY_Model
         ),
       'CNPJ' => array(
         'type' => 'text',
-        'label' => 'verProc',
+        'label' => 'CNPJ',
         'class' => '',
         'label_class' => 'col-md-2',
         'prepend' => '<div class="col-md-2">', 
@@ -181,7 +181,7 @@ class nota_model extends MY_Model
         ),
       'xNomeCliente' => array(
         'type' => 'text',
-        'label' => 'xNomeCliente', 
+        'label' => 'Nome Cliente', 
         'class' => '',
         'label_class' => 'col-md-2',
         'prepend' => '<div class="col-md-2">',
@@ -239,7 +239,7 @@ class nota_model extends MY_Model
         'values' => array(),),
       'xNome' => array(
         'type' => 'text', 
-        'label' => 'xNome',
+        'label' => 'Nome',
         'class' => '', 
         'label_class' => 
         'col-md-2', 
